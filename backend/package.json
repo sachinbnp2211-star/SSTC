@@ -1,0 +1,29 @@
+{
+  "name": "hackbios-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.mjs",
+    "start": "node src/server.mjs",
+    "seed:admin": "node scripts/seedAdmin.mjs",
+    "reset:admin": "node scripts/resetAdmin.mjs",
+    "seed:departments": "node scripts/seedDepartments.mjs",
+    "seed:officer-registry": "node scripts/seedOfficerRegistry.mjs",
+    "test": "node --test ./test/**/*.test.mjs"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^1.0.10",
+    "@tesseract.js-data/eng": "^1.0.0",
+    "@tesseract.js-data/hin": "^1.0.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.1",
+    "express": "^4.21.2",
+    "groq-sdk": "^0.37.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.2",
+    "multer": "^1.4.5-lts.1",
+    "pdfjs-dist": "^6.4.299",
+    "tesseract.js": "^7.0.0"
+  }
+}
